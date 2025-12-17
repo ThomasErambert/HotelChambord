@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="../css/global.css" />
+
+  <link rel="icon" href="../img/logo_Hotel_Chambord-ico.png" />
+  <title>Hôtel Chambord | Réservations</title>
+
+  <style>
+    .reservations {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 992px) {
+      .reservations {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="bandeau-bg-checkin"></div>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/logo_Hotel_Chambord-all.png" alt="Hôtel Chambord" class="logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="chambres.html">Chambres</a></li>
+          <li class="nav-item"><a class="nav-link active" href="restaurant.html">Restaurant</a></li>
+          <li class="nav-item"><a class="nav-link" href="spa.html">Spa</a></li>
+          <li class="nav-item"><a class="nav-link" href="avis.html">Avis</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Rechercher">
+          <button class="btn btn-dark">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="container my-5">
+
+    <div class="reservations">
+
+      <!-- CHAMBRES -->
+      <div class="card p-4 shadow-sm">
+        <h2>Réservation des Chambres</h2>
+        <p>Réservez votre séjour à l'hôtel Chambord.</p>
+
+        <label>Type de chambre</label>
+        <select class="form-select mb-2">
+          <option>Choisissez une option</option>
+          <option>Chambre simple</option>
+          <option>Chambre double</option>
+          <option>Suite</option>
+        </select>
+
+        <label>Date d'arrivée</label>
+        <input type="date" class="form-control mb-2">
+
+        <label>Date de départ</label>
+        <input type="date" class="form-control mb-3">
+
+        <button class="btn btn-dark w-100">Réserver</button>
+      </div>
+
+      <!-- SOINS -->
+      <div class="card p-4 shadow-sm">
+        <h2>Réservation des Soins</h2>
+        <p>Réservez votre soin au Spa.</p>
+
+        <label>Type de soin</label>
+        <select class="form-select mb-2">
+          <option>Choisissez une option</option>
+          <option>Massage</option>
+          <option>Soin du visage</option>
+          <option>Hammam</option>
+        </select>
+
+        <label>Date</label>
+        <input type="date" class="form-control mb-2">
+
+        <label>Heure</label>
+        <input type="time" class="form-control mb-3">
+
+        <button class="btn btn-dark w-100">Réserver</button>
+      </div>
+
+      <!-- TABLE -->
+      <div class="card p-4 shadow-sm">
+        <h2>Réservation d'une table</h2>
+        <p>Restaurant de l'hôtel Chambord.</p>
+
+        <label>Type de table</label>
+        <select class="form-select mb-2">
+          <option>Choisissez une option</option>
+          <option>2 personnes</option>
+          <option>4 personnes</option>
+          <option>Groupe</option>
+        </select>
+
+        <label>Date</label>
+        <input type="date" class="form-control mb-2">
+
+        <label>Heure</label>
+        <input type="time" class="form-control mb-3">
+
+        <button class="btn btn-dark w-100">Réserver</button>
+      </div>
+
+    </div>
+  </main>
+  <!-- JS -->
+  <script src="../js/bootstrap.js"></script>
+</body>
+<!-- section : footer -->
+<footer class="mt-5 shadow pt-5">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <!-- Liens utiles -->
+      <div class="col-md-4 my-5 ps-4">
+        <h2>Liens utiles</h2>
+        <ul class="list-unstyled">
+          <li>
+            <a href="pages/contact.html" class="text-decoration-none text-dark">
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href="pages/recrutement.html" class="text-decoration-none text-dark">
+              Recrutement
+            </a>
+          </li>
+          <li>
+            <a href="pages/mentions-legales.html" class="text-decoration-none text-dark">
+              Mentions légales
+            </a>
+          </li>
+          <li>
+            <a href="pages/politique-protection-donnees.html" class="text-decoration-none text-dark">
+              Politique de protection des données
+            </a>
+          </li>
+          <li>
+            <a href="pages/politique-cookies.html" class="text-decoration-none text-dark">
+              Politique cookies
+            </a>
+          </li>
+          <a href="connexion.html" class="btn btn-outline-dark ms-3" title="Connexion">
+  <i class="fa-solid fa-user"></i>
+</a>
+
+        </ul>
+
+        <!-- Réseaux sociaux -->
+        <h2 class="mt-4">Suivez-nous</h2>
+        <div class="mt-3 d-flex">
+          <a href="https://www.facebook.com" class="btn btn-outline-dark me-2" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com" class="btn btn-outline-dark me-2" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.twitter.com" class="btn btn-outline-dark me-2" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Formulaire de contact -->
+      <div class="col-md-7 my-5">
+        <form method="post" action="contact.php" class="mx-auto" style="max-width: 500px">
+          <h2 class="mb-3">Contactez-nous</h2>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Nom</label>
+              <input type="text" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Prénom</label>
+              <input type="text" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Sujet</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="5" required></textarea>
+            </div>
+
+            <div class="col-12">
+              <button class="btn btn-dark w-100 fw-bold">Envoyer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-center mt-4">
+      &copy; 2023 Hôtel Chambord. Tous droits réservés.<br>
+      <em>Site à but pédagogique</em>
+    </p>
+  </div>
+</footer>
+
+</html>

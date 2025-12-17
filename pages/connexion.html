@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="../css/global.css" />
+
+  <link rel="icon" href="../img/logo_Hotel_Chambord-ico.png" />
+  <title>Connexion | Hôtel Chambord</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="bandeau-bg-checkin"></div>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/logo_Hotel_Chambord-all.png" alt="Hôtel Chambord" class="logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="chambres.html">Chambres</a></li>
+          <li class="nav-item"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+          <li class="nav-item"><a class="nav-link" href="spa.html">Spa</a></li>
+          <li class="nav-item"><a class="nav-link" href="avis.html">Avis</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Icône connexion -->
+        <a href="connexion.html" class="btn btn-dark">
+          <i class="fa-solid fa-user"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="container my-5">
+
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5">
+
+        <div class="card shadow p-4">
+          <h2 class="text-center mb-4">Connexion</h2>
+
+          <form method="post" action="login.php">
+
+            <div class="mb-3">
+              <label class="form-label">Adresse email</label>
+              <input type="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Mot de passe</label>
+              <input type="password" class="form-control" required>
+            </div>
+
+            <div class="d-grid mb-3">
+              <button type="submit" class="btn btn-dark fw-bold">
+                Se connecter
+              </button>
+            </div>
+
+            <div class="text-center">
+              <a href="#" class="text-decoration-none">Mot de passe oublié ?</a>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Section Retour au Hub -->
+<section class="container my-5">
+  <div class="card text-center shadow p-4">
+    <h2 class="mb-3">Accéder au Hub Administratif</h2>
+    <p class="mb-4">Cliquez ci-dessous pour retourner au Hub (Non visible si pas connecter avec un compte Admin</p>
+    <a href="hub.html" class="btn btn-dark btn-lg">
+      <i class="fa-solid fa-house me-2"></i>Retour au Hub
+    </a>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-5 shadow pt-4">
+    <p class="text-center">
+      &copy; 2023 Hôtel Chambord<br>
+      <em class="avertissement-text">Site pédagogique</em>
+    </p>
+  </footer>
+
+  <!-- JS -->
+  <script src="../js/bootstrap.js"></script>
+</body>
+</html>

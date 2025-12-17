@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="icon" href="../img/logo_Hotel_Chambord-ico.png" />
+    <title>HOTEL CHAMBORD | Hub Administratif</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="bandeau-bg-hub"></div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo_Hotel_Chambord-all.png" alt="Logo Hôtel Chambord" class="logo"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse width-800" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="chambres.html">Chambres</a></li>
+            <li class="nav-item"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+            <li class="nav-item"><a class="nav-link" href="spa.html">Spa</a></li>
+            <li class="nav-item"><a class="nav-link" href="avis.html">Avis</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Hub Content -->
+    <main class="container my-5">
+      <div class="text-center mb-5">
+        <h1>Hub Administratif</h1>
+        <p class="lead">Accédez rapidement aux différentes sections de gestion du site</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Modification de compte -->
+        <div class="col-md-4">
+          <div class="card shadow h-100 text-center">
+            <div class="card-body d-flex flex-column">
+              <i class="fa-solid fa-user-pen fa-3x mb-3"></i>
+              <h5 class="card-title">Modification de compte</h5>
+              <p class="card-text flex-grow-1">Modifier les informations personnelles des utilisateurs (nom, prénom, email, mot de passe).</p>
+              <a href="modification.html" class="btn btn-dark mt-3">Accéder</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Création d'emplois -->
+        <div class="col-md-4">
+          <div class="card shadow h-100 text-center">
+            <div class="card-body d-flex flex-column">
+              <i class="fa-solid fa-briefcase fa-3x mb-3"></i>
+              <h5 class="card-title">Création d’emplois</h5>
+              <p class="card-text flex-grow-1">Ajouter de nouvelles offres d'emploi et consulter la liste des offres existantes.</p>
+              <a href="creation_emplois.html" class="btn btn-dark mt-3">Accéder</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gestion des utilisateurs et services -->
+        <div class="col-md-4">
+          <div class="card shadow h-100 text-center">
+            <div class="card-body d-flex flex-column">
+              <i class="fa-solid fa-users-cog fa-3x mb-3"></i>
+              <h5 class="card-title">Gestion utilisateurs & services</h5>
+              <p class="card-text flex-grow-1">Ajouter, modifier ou supprimer des comptes clients, services et administrateurs.</p>
+              <a href="gestion_utilisateur.html" class="btn btn-dark mt-3">Accéder</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    
+    <!-- Footer -->
+    <footer class="mt-5 shadow pt-5">
+      <div class="container d-flex justify-content-center reverse-order">
+        <div class="col-md-4 my-5 ps-4">
+          <h2>Liens utiles</h2>
+          <ul class="list-unstyled">
+            <li><a href="contact.html" class="text-decoration-none text-dark">Contact</a></li>
+            <li><a href="recrutement.html" class="text-decoration-none text-dark">Recrutement</a></li>
+            <li><a href="mentions-legales.html" class="text-decoration-none text-dark">Mentions légales</a></li>
+            <li><a href="politique-protection-donnees.html" class="text-decoration-none text-dark">Politique de protection des données</a></li>
+            <li><a href="politique-cookies.html" class="text-decoration-none text-dark">Politique cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center">&copy; 2023 Hôtel Chambord. Tous droits réservés.<br><em class="avertissement-text">Attention ce site n'est pas à but commercial. Il est uniquement destiné à des fins d'apprentissage.</em></p>
+    </footer>
+
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>

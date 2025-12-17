@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="icon" href="../img/logo_Hotel_Chambord-ico.png" />
+    <title>HOTEL CHAMBORD | Modification de compte</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+        <a href="hub.html" class="btn btn-secondary mb-3">
+  <i class="fa-solid fa-arrow-left me-2"></i>Retour au Hub
+</a>
+
+      <div class="bandeau-bg-compte"></div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo_Hotel_Chambord-all.png" alt="Logo Hôtel Chambord" class="logo"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse width-800" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="chambres.html">Chambres</a></li>
+            <li class="nav-item"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+            <li class="nav-item"><a class="nav-link" href="spa.html">Spa</a></li>
+            <li class="nav-item"><a class="nav-link" href="avis.html">Avis</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <div class="text-center mb-5">
+        <h1>Modifier vos informations</h1>
+        <p class="lead">Mettez à jour vos informations personnelles en toute sécurité.</p>
+      </div>
+
+      <!-- Bloc Formulaire -->
+      <section class="mx-auto" style="max-width: 600px;">
+        <div class="card shadow p-4">
+          <form method="post" action="modification-compte.php">
+            <!-- Champ caché pour l'ID client -->
+            <input type="hidden" name="client_id" value="<!-- ID client ici -->" />
+
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="prenom" class="form-label">Prénom</label>
+              <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Votre prénom" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="motdepasse" class="form-label">Mot de passe</label>
+              <input type="password" class="form-control" id="motdepasse" name="motdepasse" placeholder="Nouveau mot de passe">
+              <small class="text-muted">Laissez vide si vous ne souhaitez pas changer le mot de passe</small>
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-dark fw-bold">Mettre à jour</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-5 shadow pt-5">
+      <div class="container d-flex justify-content-center reverse-order">
+        <div class="col-md-4 my-5 ps-4">
+          <h2>Liens utiles</h2>
+          <ul class="list-unstyled">
+            <li><a href="contact.html" class="text-decoration-none text-dark">Contact</a></li>
+            <li><a href="recrutement.html" class="text-decoration-none text-dark">Recrutement</a></li>
+            <li><a href="mentions-legales.html" class="text-decoration-none text-dark">Mentions légales</a></li>
+            <li><a href="politique-protection-donnees.html" class="text-decoration-none text-dark">Politique de protection des données</a></li>
+            <li><a href="politique-cookies.html" class="text-decoration-none text-dark">Politique cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center">&copy; 2023 Hôtel Chambord. Tous droits réservés.<br><em class="avertissement-text">Attention ce site n'est pas à but commercial. Il est uniquement destiné à des fins d'apprentissage.</em></p>
+    </footer>
+
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>
